@@ -1,39 +1,146 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome,
-
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# Feather & Quill
 
 ---
 
-Happy coding!
+## Table of Contents
+
+* [Introduction](#introduction)
+
+* [User Experience](#user-experience)
+    * [Project Goals](#project-goals)
+    * [Target Audience](#target-audience)
+
+* [User Stories](#user-stories)
+    * [First Time Visitor Goals](#first-time-visitor-goals)
+    * [Registered User Goals](#registered-user-goals)
+    * [Admin User Goals](#admin-user-goals)
+    * [Agile Development](#agile-development)
+
+* [Design](#design)
+    * [Colour Scheme](#colour-scheme)
+    * [Typography](#typography)
+    * [Imagery](#imagery)
+    * [Wireframes](#wireframes)
+    * [Database Relationship Schema](#database-relationship-schema)
+
+* [Features](#features)
+    * [General Features](#general-features)
+    * [Future Implementation](#future-implementations)
+    * [Accessibility](#accessibility)
+
+* [Testing](#testing)
+    * [HTML Validation](#html-validation)
+    * [CSS Validation](#css-validation)
+    * [Javascript Validation](#javascript-validation)
+    * [PEP8 CI Python Validation](#pep8-ci-python-validation)
+    * [Manual Testing](#manual-testing)
+    * [Bugs](#bugs)
+
+* [Tools and Technologies Used](#tools-and-technologies-used)
+    * [Languages and Frameworks](#languages-and-frameworks)
+    * [Libraries and Programs Used](#libraries-and-programs-used)
+
+* [Deployment](#deployment)
+    * [Heroku Deployment](#heroku-deployment)
+    * [Clone Repository](#clone-repository)
+    * [Fork Repository](#fork-repository)
+
+* [Credits](#credits)
+    * [Code Used](#code-used)
+    * [Content](#content)
+    * [Media](#media)
+    * [Acknowledgments](#acknowledgments)
+
+---
+
+## Introduction
+
+---
+
+## User Experience
+
+### Project Goals
+
+### Target Audience
+
+---
+
+## User Stories
+
+### First Time Visitor Goals
+
+### Registered User Goals
+
+### Admin User Goals
+
+### Agile Development
+
+---
+
+## Design
+
+### Colour Scheme
+
+### Typography
+
+### Imagery
+
+### Wireframes
+
+### Database Relationship Schema
+
+---
+
+## Features
+
+### General Features
+
+### Future Implementation
+
+### Accessibility
+
+---
+
+## Testing
+
+### HTML Validation
+
+### CSS Validation
+
+### Javascript Validation
+
+### PEP8 CI Python Validation
+
+### Manual Testing
+
+### Bugs
+
+---
+
+## Tools and Technologies Used
+
+### Languages and Frameworks
+
+### Libraries and Programs Used
+
+---
+
+## Deployment
+
+### Heroku Deployment
+
+### Clone Repository
+
+### Fork Repository
+
+---
+
+## Credits
+
+### Code Used
+
+### Content
+
+### Media
+
+### Acknowledgments
