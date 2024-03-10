@@ -17,10 +17,10 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ["-created_on"]
+        ordering = ['-created_on']
     
     def __str__(self):
-        return f"{self.title}" | Written by {self.author}
+        return f"{self.title} | Written by {self.author}"
     
 
 # Code Credit: CI I Think Therefore I Blog Walkthrough
@@ -29,9 +29,10 @@ class Comment(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="commenter")
     body = models.TextField()
     approved = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ["created_on"]
+        ordering = ['created_on']
     
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
