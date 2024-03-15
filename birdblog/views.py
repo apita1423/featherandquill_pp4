@@ -10,7 +10,7 @@ class PostList(generic.ListView):
     template_name = "blog/index.html"
     paginate_by = 6
 
-    def post_detail(request, slug):
+def post_detail(request, slug):
         """
         Display an individual :model:`blog.Post`.
 
