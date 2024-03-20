@@ -10,11 +10,7 @@
         <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
       </div>
       <div class="d-none d-md-block col-md-6 masthead-image">
-        <img
-          src="{% static 'images/default.jpg' %}"
-          class="scale"
-          alt="placeholder"
-        />
+        <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder">
       </div>
     </div>
   </div>
@@ -26,7 +22,7 @@
       <div class="card-body">
         <!-- The post content goes inside the card-text. -->
         <!-- Use the | safe filter inside the template tags -->
-        <p class="card-text">{{ post.content | safe }}</p>
+        <article class="card-text">{{ post.content | safe }}</article>
       </div>
     </div>
   </div>
@@ -38,7 +34,7 @@
       </strong>
     </div>
     <div class="col-12">
-      <hr/>
+      <hr>
     </div>
   </div>
   <!-- Displaying Comments -->
