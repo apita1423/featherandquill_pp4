@@ -1,5 +1,6 @@
-from .models import Comment
 from django import forms
+from .models import Comment
+
 
 # Code Credit: I Think Therefore I Blog Walkthrough
 class CommentForm(forms.ModelForm):
