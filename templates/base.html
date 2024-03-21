@@ -1,4 +1,3 @@
-<!-- Code Credit: CI I Think Therefore I Blog Walkthrough -->
 {% load static %}
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
@@ -10,8 +9,11 @@
 <html class="h-100" lang="en">
 
 <head>
-    <title>Feather &amp; Quill</title>
+    <meta charset="utf-8">
+    <meta name="description" content="A bird enthusiast's blog about their adventures bird watching and literature.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Feather &amp; Quill</title>
 
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,20 +21,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
     
-
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://bootswatch.com/5/minty/bootstrap.min.css" rel="stylesheet">
-        {% comment %} integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" {% endcomment %}
 
-    <!-- Custom CSS -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/bird_favicon.png' %}">
+    
+    <!-- Static CSS -->
     <link rel="stylesheet" href="{% static './css/style.css' %}">
 </head>
 
 <body class="d-flex flex-column h-100 main-bg">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
@@ -49,7 +51,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'about' %}">About</a>
+                            href="{% url 'about' %}">About Us</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -74,7 +76,7 @@
         </div>
     </nav>
 
-    <!-- displaying Django messages -->
+    <!-- Message Alerts -->
 <div class="container">
     <div class="row">
       <div class="col-md-8 offset-md-2">
