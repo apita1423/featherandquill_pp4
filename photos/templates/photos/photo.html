@@ -5,8 +5,8 @@
         <div class="col">
             <a href="{% url 'gallery' %}" class="btn btn-primary my-3">Back</a>
             <div>
-                <img  style="max-width: 40%; max-height: 40%;" src="https://res.cloudinary.com/db5hwihda/image/upload/v1711045747/woman_bird_w28yco.jpg" alt="">
-                <p>Lorem Ipsum is simply dummy test of the printing and typesetting.</p>
+                <img  style="max-width: 50%; max-height: 50%;" src="{{ photo.image.url }}" alt="">
+                <p class="text-end">{{ photo.description }}</p>
             </div>
         </div>
     </div>
