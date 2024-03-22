@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     'cloudinary',
     'birdblog',
     'about',
-    'photos.apps.PhotosConfig',
+    'photos',
+    'pages',
 ]
 
 SITE_ID = 1

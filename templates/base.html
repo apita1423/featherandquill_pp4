@@ -2,6 +2,7 @@
 {% url 'home' as home_url %} 
 {% url 'about' as about_url %}
 {% url 'gallery' as gallery_url %} 
+{%  url 'home' as home_url %}
 {% url 'account_login' as login_url %} 
 {% url 'account_signup' as signup_url %} 
 {% url 'account_logout' as logout_url %}
@@ -78,8 +79,14 @@
                 class="nav-link {% if request.path == home_url %}active"
                 aria-current="page{% endif %}"
                 href="{% url 'home' %}"
-                >Home</a
-              >
+                >Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.path == post_url %}active"
+                aria-current="page{% endif %}"
+                href="{% url 'post' %}"
+                >Post</a>
             </li>
             <li class="nav-item">
               <a
