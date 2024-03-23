@@ -55,9 +55,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'post' %}"
-          ><span class="brand">Feather &amp; Quill</span></a
-        >
+        <a class="navbar-brand" href="{% url 'post' %}">
+          <span class="brand" style="font-family: 'Estonia', sans-serif";>Feather &amp; Quill</span></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -158,7 +157,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
+    <footer class="footer mt-auto py-3 bg-primary">
       <p class="m-0 text-center text-white">
         {% block copyright %} Made by Amanda Pita with <i class="fa-solid fa-heart"></i> {% endblock copyright %}
       </p>
