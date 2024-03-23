@@ -3,7 +3,27 @@
 
 {% block content %}
 
-
-<h3>Home Hopefully</h3>
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-5">
+      <div class="d-flex justify-content-center mt-5">
+        <img src="https://res.cloudinary.com/db5hwihda/image/upload/v1711199897/bird_books_n1h2hi.webp" alt="ai picture of a bird and books" class="home-img img-fluid ">
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="text-center">
+        <div class="fs-3 my-4">From Pages to Perches: Where Birds and Books Meet</div>
+        <h3 class="display-6 mb-5">Welcome to Feather &amp; Quill!</h3>
+        <div>
+          {% if user.is_authenticated %}
+          <a href="{% url 'post' %}" class="btn-lg py-2 btn btn-primary btn-post">Start Connecting!</a>
+          {% else %}
+          <a href="{% url 'account_signup' %}" class="btn-lg py-2 btn btn-primary btn-register ">Join Now!</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock content %}
