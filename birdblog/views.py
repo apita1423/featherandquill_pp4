@@ -5,6 +5,9 @@ from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
 
+def custom_404(request, exception):
+    return render(request, '404.html', status=404)
+
 class PostList(generic.ListView):
     queryset = Post.objects.filter()
     template_name = "blog/index.html"

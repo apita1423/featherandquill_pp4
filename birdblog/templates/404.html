@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="row align-items-center">
+      <div class="col-8">
+        <div class="d-flex justify-content-center mt-5">
+          <img src="https://res.cloudinary.com/db5hwihda/image/upload/v1711226346/404_page_q9x577.jpg" alt="ai picture of a bird and books" class="home-img img-fluid rounded">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="text-center">
+          <div class="fs-3 my-4">Looks like this page flew the coop!</div>
+          <h4 class="display-6 mb-5">Maybe it's time to migrate back <a href="{% url 'post' %}">home.</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
