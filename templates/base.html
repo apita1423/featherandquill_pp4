@@ -67,8 +67,7 @@
           data-bs-target="#navbarText"
           aria-controls="navbarText"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
@@ -82,18 +81,19 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link {% if request.path == post_url %}active"
-                aria-current="page{% endif %}"
-                href="{% url 'post' %}"
-                >Post</a>
-            </li>
-            <li class="nav-item">
-              <a
                 class="nav-link {% if request.path == about_url %}active"
                 aria-current="page{% endif %}"
                 href="{% url 'about' %}"
                 >About Us</a
               >
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a
+                class="nav-link {% if request.path == post_url %}active"
+                aria-current="page{% endif %}"
+                href="{% url 'post' %}"
+                >Post</a>
             </li>
             <li class="nav-item">
               <a
@@ -103,7 +103,6 @@
                 >Gallery</a
               >
             </li>
-            {% if user.is_authenticated %}
             <li class="nav-item">
               <a
                 class="nav-link {% if request.path == logout_url %}active"
