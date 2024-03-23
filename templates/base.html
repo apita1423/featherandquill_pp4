@@ -1,7 +1,5 @@
 {% load static %} 
 {% url 'about' as about_url %}
-{% url 'gallery' as gallery_url %}
-{% url 'landing_page' as landing_page_url %} 
 {% url 'account_login' as login_url %} 
 {% url 'account_signup' as signup_url %} 
 {% url 'account_logout' as logout_url %}
@@ -57,7 +55,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'landing_page' %}"
+        <a class="navbar-brand" href="{% url 'post' %}"
           ><span class="brand">Feather &amp; Quill</span></a
         >
         <button
@@ -74,9 +72,9 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link {% if request.path == landing_page_url %}active"
+                class="nav-link {% if request.path == post_url %}active"
                 aria-current="page{% endif %}"
-                href="{% url 'landing_page' %}"
+                href="{% url 'post' %}"
                 >Home</a>
             </li>
             <li class="nav-item">
@@ -94,14 +92,6 @@
                 aria-current="page{% endif %}"
                 href="{% url 'post' %}"
                 >Post</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link {% if request.path == gallery_url %}active"
-                aria-current="page{% endif %}"
-                href="{% url 'gallery' %}"
-                >Gallery</a
-              >
             </li>
             <li class="nav-item">
               <a
