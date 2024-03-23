@@ -5,6 +5,8 @@ from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
 
+def landing_page(request):
+    return render(request, "landing_page.html")
 
 def landing_page(request):
     return render(request, "landing_page.html")

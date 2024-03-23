@@ -160,9 +160,7 @@
 
     <main class="flex-shrink-0 main-bg">
       {% if user.is_authenticated %}
-      <p class="text-end m-3">Logged in as {{ user }}</p>
-      {% else %}
-      <p class="text-end m-3">User not logged in</p>
+      <p class="text-end m-2">Logged in as {{ user }}</p>
       {% endif %} {% block content %}
       <!-- Content Goes here -->
       <p>This is my default parargraph</p>
@@ -175,22 +173,22 @@
         {% block copyright %} Made by Amanda Pita with <i class="fa-solid fa-heart"></i> {% endblock copyright %}
       </p>
       <p class="m-0 text-center text-white"> Follow us:
-        <a href="https://www.facebook.com/" target="blank" rel="noopener"
+        <a class="text-white" href="https://www.facebook.com/" target="blank" rel="noopener"
         aria-label="Visit our Facebook page (opens in a new tab)">
         <i class="fa-brands fa-square-facebook"></i></a>
-        <a
+        <a class="text-white"
         href="https://twitter.com/"
         target="blank"
         rel="noopener"
         aria-label="Visit our Twitter page (opens in a new tab)"
         ><i class="fa-brands fa-square-x-twitter"></i></a>
-        <a
+        <a class="text-white"
         href="https://www.instagram.com/"
         target="blank"
         rel="noopener"
         aria-label="Visit our Instagram page (opens in a new tab)"
         ><i class="fa-brands fa-square-instagram"></i></a>
-        <a
+        <a class="text-white"
         href="https://www.youtube.com/"
         target="blank"
         rel="noopener"
