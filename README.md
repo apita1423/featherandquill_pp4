@@ -1,5 +1,7 @@
 # Feather & Quill
+Feather and Quill, a bird enthusiats blog. 
 
+![Feather and Quill Title Image](/static/readme_images/am_I_responsive.png)
 ---
 
 ## Table of Contents
@@ -54,7 +56,7 @@
 ---
 
 ## Introduction
-
+Feather and Quill is my fourth project with Code Insitute. The idea for Feather and Quill came from my love for birds and books. I wanted to create a blog that will showcase the various topics between birds and books. It is a place where you could receive recommendations on books (mostly about birds), tips on bird watching, gallery of pictures that were taken, and events (future development).
 ---
 
 ## User Experience
@@ -119,9 +121,29 @@
 
 ## Tools and Technologies Used
 
-### Languages and Frameworks
+### Languages Used
+- HTML
+- CSS
+- Javascript
+- Python
 
-### Libraries and Programs Used
+### Frameworks Used
+- Django 
+- Crispy Forms
+- Bootstrap 5 - 
+- Cloudinary
+
+### Database Used
+- ElephantSQL
+
+### Tools
+- VSCode - IDE Used.
+- Github - To store the Feather and Quill repository.
+- Font Awesome - For the social links and heart in the footer.
+- Balsamiq - Used to create the wireframes for the project.
+- Favicon - Used to create the favicon for the site.
+- Bootswatch - For bootstrap template
+- Heroku - Cloud platform used for deployment of the project.
 
 ---
 
@@ -144,3 +166,6 @@
 ### Media
 
 ### Acknowledgments
+- I'm extremely grateful for my mentor Martina, who has gone through countless of question and has guided me through all of them.
+
+- I'm also greateful for my husband, who has encouraged me to keep on going especially with this project, which has given me multiple issues. 
