@@ -48,7 +48,7 @@
     />
 
     <!-- Static CSS -->
-    <link rel="stylesheet" href="{% static './css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
 
   <body class="d-flex flex-column h-100 main-bg">
@@ -199,5 +199,12 @@
     ></script>
 
     {% block extras %} {% endblock %}
+    <script>
+      setTimeout(function () {
+          let messages = document.getElementById('msg');
+          let alert = new bootstrap.Alert(messages);
+          alert.close();
+      }, 2500);
+  </script>
   </body>
 </html>
