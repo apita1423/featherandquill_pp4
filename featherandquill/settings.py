@@ -55,7 +55,6 @@ INSTALLED_APPS = [
     'birdblog',
     'about',
     'photos',
-    'pages',
 ]
 
 SITE_ID = 1
