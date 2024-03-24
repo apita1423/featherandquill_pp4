@@ -205,23 +205,23 @@ Not all user stories have been implemented. They have been left for future imple
 
 ### Media
 
-- Images have been sourced from Pexel, Unspash, Gencraft AI, Simon & Schuster Publsihing, and Little, Brown and Company Publishing.
+Images have been sourced from Pexel, Unspash, Gencraft AI, Simon & Schuster Publsihing, and Little, Brown and Company Publishing.
 
-- Two images for the book reviews on the blog post has been taken from their publishing company. A link to the publishing company of each book has been added to the relative blog post.
+Two images for the book reviews on the blog post has been taken from their publishing company. A link to the publishing company of each book has been added to the relative blog post.
 * [The Goldfinch](https://www.hachettebookgroup.com/titles/donna-tartt/the-goldfinch/9780316055437/?lens=little-brown)
 * [An Enchantment of Ravens](https://www.simonandschuster.com/books/An-Enchantment-of-Ravens/Margaret-Rogerson/9781481497596)
 
-- Images sourced from Pexel:
+Images sourced from Pexel:
 * [Robin and Great Tit on Bird Feeder](https://www.pexels.com/photo/birds-feeding-on-bird-seeds-6702248/)
 * [Owl for 404 page](https://www.pexels.com/photo/closeup-photography-of-white-and-brown-owl-1310787/)
 * [Bird flyings and autumn leaves](https://www.pexels.com/photo/a-low-angle-shot-of-birds-flying-in-the-sky-between-trees-at-the-forest-14686220/)
 * [Coffee](https://www.pexels.com/photo/selective-focus-photography-of-vintage-brown-and-gray-coffee-grinder-1309778/)
 * [Inside car driving](https://www.pexels.com/photo/bokeh-lights-67088/)
 
-- Images sourced from Unsplash:
+Images sourced from Unsplash:
 * [Binoculars and bird book](https://unsplash.com/photos/black-binoculars-on-opened-book-S8wI7myzAjE)
 
-- Images sourced from Gencraft AI:
+Images sourced from Gencraft AI:
 * [Bird AI](https://gencraft.com/prompt/85c15f30-f465-4a69-8b43-a31d7860d4fa?creation_id=2dc2a55c-1370-4969-93b4-df6f1d420f4c)
 
 
