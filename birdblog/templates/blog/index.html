@@ -1,14 +1,14 @@
-<!-- Code Credit: CI I Think Therefore I Blog Walkthrough -->
 {% extends "base.html" %}
 {% load static %}
 
 {% block content %}
 
 {% if user.is_authenticated %}
-<!-- index.html content starts here -->
+<!-- Code Credit: CI I Think Therefore I Blog Walkthrough -->
+<!-- Blog Design -->
 <div class="container-fluid">
     <div class="row">
-        <!-- Blog Entries Column -->
+        <!-- Blog Entries -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 {% for post in post_list %}
@@ -45,6 +45,7 @@
             </div>
         </div>
     </div>
+    <!-- Paginated of Blog Posts -->
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
@@ -61,6 +62,7 @@
     {% endif %}
 </div>
 {% else %}
+<!-- Home Page -->
 <div class="container">
     <div class="row align-items-center">
         <div class="col-5">
@@ -80,5 +82,4 @@
 </div>
 </div>
 {% endif %}
-<!-- index.html content ends here -->
 {% endblock %}

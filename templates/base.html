@@ -5,13 +5,11 @@
 {% url 'account_logout' as logout_url %}
 
 <!DOCTYPE html>
+
 <html class="h-100" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="A bird enthusiast's blog about their adventures bird watching and literature."
-    />
+    <meta name="description" content="A bird enthusiast's blog about their adventures bird watching and literature."/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Feather &amp; Quill</title>
@@ -19,33 +17,17 @@
     <!-- Google Fonts CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Estonia&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet"/>
 
     <!-- Font Awesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
     <!-- Bootstrap CSS -->
-    <link
-      href="https://bootswatch.com/5/minty/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://bootswatch.com/5/minty/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="{% static 'images/bird_favicon.ico' %}"
-    />
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/bird_favicon.ico' %}"/>
 
     <!-- Static CSS -->
     <link rel="stylesheet" href="{% static './css/style.css' %}" />
@@ -53,7 +35,7 @@
 
   <body class="d-flex flex-column h-100">
 
-    <!-- Navigation -->
+    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'post' %}">
@@ -91,7 +73,7 @@
                 class="nav-link {% if request.path == post_url %}active"
                 aria-current="page{% endif %}"
                 href="{% url 'post' %}"
-                >Post</a>
+                >Blog</a>
             </li>
             <li class="nav-item">
               <a
@@ -133,15 +115,13 @@
             class="alert {{ message.tags }} alert-dismissible
           fade show"
             id="msg"
-            role="alert"
-          >
+            role="alert">
             {{ message | safe }}
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="alert"
-              aria-label="Close"
-            ></button>
+              aria-label="Close"></button>
           </div>
           {% endfor %}
         </div>
@@ -199,6 +179,8 @@
     ></script>
 
     {% block extras %} {% endblock %}
+
+    <!-- JS for Message Timeout -->
     <script>
       setTimeout(function () {
           let messages = document.getElementById('msg');
@@ -206,5 +188,6 @@
           alert.close();
       }, 2500);
   </script>
+  
   </body>
 </html>
