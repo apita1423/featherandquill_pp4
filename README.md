@@ -1,9 +1,10 @@
 # Feather & Quill
-Feather and Quill, a bird enthusiats blog. 
+- Feather and Quill, a bird enthusiats blog. 
+
+- Feather & Quill is LIVE: ![Feather & Quill](https://featherandquill-pp4-75f967db4002.herokuapp.com/)
 
 ![Feather and Quill Responsive Page](/static/readme_images/am_I_responsive.png)
 
-Feather & Quill is LIVE: [Feather & Quill](https://featherandquill-pp4-75f967db4002.herokuapp.com/)
 ---
 
 ## Table of Contents
@@ -91,17 +92,23 @@ Not all user stories have been implemented. They have been left for future imple
 
 ### Colour Scheme
 
+- I wanted the colours of the site to be simple, clean, and light. I only used one colour for the buttons and footer.
+
+![Coolors](/static/readme_images/colour.png)
+
 ### Typography
 
-Estonia font from [Google Font](https://fonts.google.com/?query=estonia) has been used for the Feather & Quill title.
+- Estonia font from ![Google Font](https://fonts.google.com/?query=estonia) has been used for the Feather & Quill title.
 
 ### Imagery
 
 - Images have been obtained from Pexel, Unsplash, Gencraft (AI), Simon & Schuster Publsihing, and Little, Brown and Company Publishing.
 
-- All images will be credited in the [Media](#media) section.
+- All images will be credited in the ![Media](#media) section.
 
 ### Wireframes
+
+- I used Balsamiq for the wireframes for this project. At the time of creating them, I had grandieous ideas, but due to my leave of absence and limited time to create all the ideas I wanted, not everything was implemented. I tried to get as close to the original idea, but it will be a great tool to have for future updates.
 
 ### Database Relationship Schema
 
@@ -114,6 +121,10 @@ Estonia font from [Google Font](https://fonts.google.com/?query=estonia) has bee
 ### General Features
 
 ### Future Implementation
+
+1. An events/booking page where visitors to the page can view the events, but would not be able to book unless they are authenticated. Authenticated users can view the events and book for the event. 
+2. Authicated users would be able to comment anonoymously to blog posts.
+3. A newsletter that can be set to authenticated user about events happening in the month, which helps if they are not on the site often. 
 
 ### Accessibility
 
@@ -146,7 +157,7 @@ Estonia font from [Google Font](https://fonts.google.com/?query=estonia) has bee
 ### Frameworks Used
 - Django 
 - Crispy Forms
-- Bootstrap 5 - 
+- Bootstrap 5 
 - Cloudinary
 
 ### Database Used
@@ -158,8 +169,15 @@ Estonia font from [Google Font](https://fonts.google.com/?query=estonia) has bee
 - Font Awesome - For the social links and heart in the footer.
 - Balsamiq - Used to create the wireframes for the project.
 - Favicon - Used to create the favicon for the site.
+- Google Font - Estonia font used for the title of the site.
 - Bootswatch - For bootstrap template
 - Heroku - Cloud platform used for deployment of the project.
+- Pexel - Images used for gallery and blog.
+- Unsplash - Images used for gallery and blog.
+- Gencraft - Creation of two AI images for the title page and blog posts main image.
+- ChatGPT - Content for the blog posts and About Us section.
+- DrawSQL - Site for the creation of the database relationship diagram.
+- Coolors - Used to find colour for the website.
 
 ---
 
@@ -182,6 +200,6 @@ Estonia font from [Google Font](https://fonts.google.com/?query=estonia) has bee
 ### Media
 
 ### Acknowledgments
-- I'm extremely grateful for my mentor Martina, who has gone through countless of question and has guided me through all of them.
+- I'm extremely grateful for my mentor Martina, who has gone through countless of questions and has guided me through all of them.
 
 - I'm also greateful for my husband, who has encouraged me to keep on going especially with this project, which has given me multiple issues. 
