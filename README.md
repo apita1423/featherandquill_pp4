@@ -1,7 +1,7 @@
 # Feather & Quill
 - Feather and Quill, a bird enthusiats blog. 
 
-- Feather & Quill is LIVE: ![Feather & Quill](https://featherandquill-pp4-75f967db4002.herokuapp.com/)
+- Feather & Quill is LIVE: [Feather & Quill](https://featherandquill-pp4-75f967db4002.herokuapp.com/)
 
 ![Feather and Quill Responsive Page](/static/readme_images/am_I_responsive.png)
 
@@ -98,13 +98,13 @@ Not all user stories have been implemented. They have been left for future imple
 
 ### Typography
 
-- Estonia font from ![Google Font](https://fonts.google.com/?query=estonia) has been used for the Feather & Quill title.
+- Estonia font from [Google Font](https://fonts.google.com/?query=estonia) has been used for the Feather & Quill title.
 
 ### Imagery
 
 - Images have been obtained from Pexel, Unsplash, Gencraft (AI), Simon & Schuster Publsihing, and Little, Brown and Company Publishing.
 
-- All images will be credited in the ![Media](#media) section.
+- All images will be credited in the [Media](#media) section.
 
 ### Wireframes
 
