@@ -1,7 +1,9 @@
 # Feather & Quill
 Feather and Quill, a bird enthusiats blog. 
 
-![Feather and Quill Title Image](/static/readme_images/am_I_responsive.png)
+![Feather and Quill Responsive Page](/static/readme_images/am_I_responsive.png)
+
+Feather & Quill is LIVE: [Feather & Quill](https://featherandquill-pp4-75f967db4002.herokuapp.com/)
 ---
 
 ## Table of Contents
@@ -56,18 +58,24 @@ Feather and Quill, a bird enthusiats blog.
 ---
 
 ## Introduction
-Feather and Quill is my fourth project with Code Insitute. The idea for Feather and Quill came from my love for birds and books. I wanted to create a blog that will showcase the various topics between birds and books. It is a place where you could receive recommendations on books (mostly about birds), tips on bird watching, gallery of pictures that were taken, and events (future development).
+
+- Feather and Quill is my fourth project with Code Insitute. The idea for Feather and Quill came from my love for birds and books. I wanted to create a blog that will showcase the various topics between birds and books. It is a place where you could receive recommendations on books (mostly about birds), tips on bird watching, gallery of pictures that were taken, and events (future development).
 ---
 
 ## User Experience
 
 ### Project Goals
 
+- Feather and Quill's goal was to create a place where users would be able to access content through blog posts about various book reviews (especially about birds), tips on bird watching for seasoned birders to just beginners. Feather and Quill would also be a place where bird enthusiants can have a conversation through comments and the possibiltiy to add pictures of their birding adventures. 
+
 ### Target Audience
+- The target audience for Feather and Quill is anyone who is passionate about bird watching and literature. 
 
 ---
 
 ## User Stories
+
+Not all user stories have been implemented. They have been left for future implementations.
 
 ### First Time Visitor Goals
 
@@ -85,11 +93,19 @@ Feather and Quill is my fourth project with Code Insitute. The idea for Feather 
 
 ### Typography
 
+Estonia font from [Google Font](https://fonts.google.com/?query=estonia) has been used for the Feather & Quill title.
+
 ### Imagery
+
+- Images have been obtained from Pexel, Unsplash, Gencraft (AI), Simon & Schuster Publsihing, and Little, Brown and Company Publishing.
+
+- All images will be credited in the [Media](#media) section.
 
 ### Wireframes
 
 ### Database Relationship Schema
+
+![Database Relationship Schema](/static/readme_images/database_schema.png)
 
 ---
 
