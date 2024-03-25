@@ -5,13 +5,16 @@ from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
 
+
 def custom_404(request, exception):
     return render(request, '404.html', status=404)
+
 
 class PostList(generic.ListView):
     queryset = Post.objects.filter()
     template_name = "blog/index.html"
     paginate_by = 6
+
 
 def post_detail(request, slug):
     queryset = Post.objects.filter(status=1)
@@ -44,6 +47,7 @@ def post_detail(request, slug):
         },
     )
 
+
 def comment_edit(request, slug, comment_id):
     if request.method == "POST":
 
@@ -57,10 +61,13 @@ def comment_edit(request, slug, comment_id):
             comment.post = post
             comment.approved = False
             comment.save()
-            messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
+            messages.add_message
+            (request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message
+            (request, messages.ERROR, 'Error updating comment!')
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
 
 def comment_delete(request, slug, comment_id):
     queryset = Post.objects.filter(status=1)
@@ -71,6 +78,7 @@ def comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message
+        (request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))

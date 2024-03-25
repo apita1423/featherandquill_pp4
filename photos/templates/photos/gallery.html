@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+<!-- Gallery Navigation -->
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                Category
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">All</li>
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                    <a href="{%  url 'add' %}" class="btn btn-outline-primary btn-block btn-sm m-1">Add Photo</a>
+                </ul>
+            </div>
+        </div>
+
+<!-- Gallery -->
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="card-img-top" class="border" src="https://res.cloudinary.com/db5hwihda/image/upload/v1711193751/bird_1_j1yjpz.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <small>Category: Pets</small>
+                        </div>
+                        <a class="btn btn-outline-primary btn-sm m-1" href="{%  url 'photo' 5 %}">View</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="card-img-top" class="border" src="https://res.cloudinary.com/db5hwihda/image/upload/v1711213032/saiw3ujlqlmtafzzefz6.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <small>Category: Pets</small>
+                        </div>
+                        <a class="btn btn-outline-primary btn-sm m-1" href="{%  url 'photo' 5 %}">View</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="card-img-top" class="border" src="https://res.cloudinary.com/db5hwihda/image/upload/v1711193751/bird_1_j1yjpz.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <small>Category: Pets</small>
+                        </div>
+                        <a class="btn btn-outline-primary btn-sm m-1" href="{%  url 'photo' 5 %}">View</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="card-img-top" class="border" src="https://res.cloudinary.com/db5hwihda/image/upload/v1711193751/bird_1_j1yjpz.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <small>Category: Pets</small>
+                        </div>
+                        <a class="btn btn-outline-primary btn-sm m-1" href="{%  url 'photo' 5 %}">View</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

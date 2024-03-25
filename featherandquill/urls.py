@@ -23,10 +23,9 @@ urlpatterns = [
     path("about/", include("about.urls"), name="about-urls"),
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
+    path("photos/", include('photos.urls')),
     path('summernote/', include('django_summernote.urls')),
     path("", include("birdblog.urls"), name="birdblog-urls"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'birdblog.views.custom_404'
