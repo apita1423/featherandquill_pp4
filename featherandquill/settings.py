@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-qntsj1j!nideewkc&13ixevh96queuduyix7u7itzp=o0qvv7)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com', '8000-apita1423-featherandquil-qe16wtr63p.us1.codeanyapp.com']
 
 
 # Application definition
@@ -113,7 +113,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com",
-    "http://127.0.0.1:8000/"
+    "http://127.0.0.1:8000/",
+    "https://8000-apita1423-featherandquil-qe16wtr63p.us1.codeanyapp.com"
 ]
 
 
