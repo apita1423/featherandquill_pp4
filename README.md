@@ -142,13 +142,26 @@ Not all user stories have been implemented. They have been left for future imple
 
 ## Testing
 
-### HTML Validation
+### HTML
 
-### CSS Validation
+### CSS
+CSS code was tested using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Passed and no errors found.
+![CSS Validation](/static/readme_images/css_validation.png)
 
-### Javascript Validation
+### Javascript
+JS code was tested using [JSHint Validator](https://jshint.com/). Code was used for timeout of messages. Although two errors were found the functionality of the timeout worked perfectly.
+![JS Validation](/static/readme_images/js_validation.png)
 
-### PEP8 CI Python Validation
+### PEP8 CI Python
+Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/).
+
+| App | Comments | Pass/Fail | 
+| --- | --- | --- |
+| about | all files passed with no errors | PASS |
+| photos | all files passed with no errors | PASS |
+| birdblog | Two path exceeded the line length, but I was unable to fix due to giving another error | PASS |
+
+
 
 ### Manual Testing
 

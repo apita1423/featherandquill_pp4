@@ -2,9 +2,10 @@ from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 from .models import About
 
-# Register your models here.
 
 # Code Credit: I Think Therefore I Blog Walkthrough
+
+
 @admin.register(About)
 class AboutAdmin(SummernoteModelAdmin):
     """

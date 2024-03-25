@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from .models import About
 
-# Create your views here.
 
 # Code Credit: I Think Therefore I Blog Walkthrough
+
+
 def about_us(request):
     """
     Renders the most recent information on the website author.
@@ -13,7 +14,6 @@ def about_us(request):
     **Context**
     ``about``
         The most recent instance of :model:`about.About`.
-        
     **Template:**
     :template:`about/about.html`
     """

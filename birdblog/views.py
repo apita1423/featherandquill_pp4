@@ -13,9 +13,11 @@ def custom_404(request, exception):
     return render(request, '404.html', status=404)
 
 # Code Credit: CI I Think Therefore I Blog Walkthrough
+
+
 class PostList(generic.ListView):
     """
-    Returns all published posts and displays them in 
+    Returns all published posts and displays them in
     a page of six posts.
 
     **Context**
@@ -24,7 +26,7 @@ class PostList(generic.ListView):
         All published instances of :model:`birdblog.Post`
     ``paginate_by``
         Number of posts per page.
-    
+
     **Template**
 
     :template:`blog/index.html`

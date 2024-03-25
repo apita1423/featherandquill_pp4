@@ -12,11 +12,11 @@ def gallery(request):
     ``categories``
         Various categories based on picture topic
     ``photos``
-        Category attaches and created based on 
+        Category attaches and created based on
         photo uploaded
     """
     category = request.GET.get('category')
-    if category == None:
+    if category is None:
         photos = Photo.objects.all()
     else:
         photos = Photo.objects.filter(category__name=category)
@@ -45,16 +45,16 @@ def addPhoto(request):
         if data['category'] != 'none':
             category = Category.objects.get(id=data['category'])
         elif data['category_new'] != '':
-            category, created = Category.objects.get_or_create(name=data['category_new'])
+            category, created =
+            Category.objects.get_or_create(name=data['category_new'])
         else:
             category = None
         photo = Photo.objects.create(
-            category = category,
-            description = data['description'],
-            image = image,
+            category=category,
+            description=data['description'],
+            image=image,
         )
-
-        return redirect('gallery')    
+    return redirect('gallery')
     context = {'categories': categories}
 
     return render(request, 'photos/add_photo.html', context)
