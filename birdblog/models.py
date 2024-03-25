@@ -4,12 +4,11 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-# Create your models here.
 
 # Code Credit: CI I Think Therefore I Blog Walkthrough
 class Post(models.Model):
     """
-    
+    Stores a single blog post entry
     """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -30,6 +29,9 @@ class Post(models.Model):
 
 # Code Credit: CI I Think Therefore I Blog Walkthrough
 class Comment(models.Model):
+    """
+    Stores a single comment entry
+    """
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="commenter")
     body = models.TextField()
