@@ -1,85 +1,72 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block content %}
-
-{% if user.is_authenticated %}
+{% extends "base.html" %} {% load static %} {% block content %} {% if user.is_authenticated %}
 <!-- Code Credit: CI I Think Therefore I Blog Walkthrough -->
 <!-- Blog Design -->
 <div class="container-fluid">
-    <div class="row">
-        <!-- Blog Entries -->
-        <div class="col-12 mt-3 left">
-            <div class="row">
-                {% for post in post_list %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
-                                {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top" src="{% static 'media/default.jpg' %}"
-                                alt="placeholder image">
-                                {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}"
-                                alt="{{ post.title }}">
-                                {% endif %}
-                            <div class="image-flash">
-                                <p class="author">Author: {{ post.author }}</p>
-                            </div>
-                            </div>
-                            <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }} </p>
-                            </a>
-                            <hr>
-                            <p class="card-text text-muted h6">{{ post.created_on}}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                {% if forloop.counter|divisibleby:3 %}
-            </div>
-            <div class="row">
+  <div class="row">
+    <!-- Blog Entries -->
+    <div class="col-12 mt-3 left">
+      <div class="row">
+        {% for post in post_list %}
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="image-container">
+                {% if "placeholder" in post.featured_image.url %}
+                <img class="card-img-top" src="{% static 'media/default.jpg' %}" alt="placeholder image" />
+                {% else %}
+                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}" />
                 {% endif %}
-                {% endfor %}
+                <div class="image-flash">
+                  <p class="author">Author: {{ post.author }}</p>
+                </div>
+              </div>
+              <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                <h2 class="card-title">{{ post.title }}</h2>
+                <p class="card-text">{{ post.excerpt }}</p>
+              </a>
+              <hr />
+              <p class="card-text text-muted h6">{{ post.created_on}}</p>
             </div>
+          </div>
         </div>
+        {% if forloop.counter|divisibleby:3 %}
+      </div>
+      <div class="row">{% endif %} {% endfor %}</div>
     </div>
-    <!-- Paginated of Blog Posts -->
-    {% if is_paginated %}
-    <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-            {% if page_obj.has_previous %}
-            <li>
-                <a href="?page={{ page_obj.previous_page_number }}" class="page-link btn btn-primary text-white">&laquo; PREV</a>
-            </li>
-            {% endif %}
-            {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link btn btn-primary text-white"> NEXT &raquo;</a></li>
-            {% endif %}
-        </ul>
-    </nav>
-    {% endif %}
+  </div>
+  <!-- Paginated of Blog Posts -->
+  {% if is_paginated %}
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+      {% if page_obj.has_previous %}
+      <li>
+        <a href="?page={{ page_obj.previous_page_number }}" class="page-link btn btn-primary text-white">&laquo; PREV</a>
+      </li>
+      {% endif %} {% if page_obj.has_next %}
+      <li><a href="?page={{ page_obj.next_page_number }}" class="page-link btn btn-primary text-white"> NEXT &raquo;</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+  {% endif %}
 </div>
 {% else %}
 <!-- Home Page -->
 <div class="container">
-    <div class="row align-items-center">
-        <div class="col-5">
-            <div class="d-flex justify-content-center mt-5">
-            <img src="https://res.cloudinary.com/db5hwihda/image/upload/v1711199897/bird_books_n1h2hi.webp" alt="ai picture of a bird and books" class="home-img img-fluid rounded">
-        </div>
+  <div class="row align-items-center">
+    <div class="col-5">
+      <div class="d-flex justify-content-center mt-5">
+        <img src="https://res.cloudinary.com/db5hwihda/image/upload/v1711199897/bird_books_n1h2hi.webp" alt="ai picture of a bird and books" class="home-img img-fluid rounded" />
+      </div>
     </div>
     <div class="col-7">
-        <div class="text-center">
-            <div class="fs-3 my-4">From Pages to Perches &amp; Where Birds and Books Meet</div>
-                <h3 class="display-6 mb-5">Welcome to Feather &amp; Quill!</h3>
-            <div>
-                <a href="{% url 'account_signup' %}" class="btn-lg py-2 btn btn-primary btn-register ">Join Now!</a>
+      <div class="text-center">
+        <div class="fs-3 my-4">From Pages to Perches &amp; Where Birds and Books Meet</div>
+        <h3 class="display-6 mb-5">Welcome to Feather &amp; Quill!</h3>
+        <div>
+          <a href="{% url 'account_signup' %}" class="btn-lg py-2 btn btn-primary btn-register">Join Now!</a>
         </div>
+      </div>
     </div>
+  </div>
 </div>
-</div>
-</div>
-{% endif %}
-{% endblock %}
+{% endif %} {% endblock %}
