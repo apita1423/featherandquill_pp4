@@ -70,6 +70,13 @@
             {% if user.is_authenticated %}
             <li class="nav-item">
               <a
+                class="nav-link {% if request.path == gallery_url %}active"
+                aria-current="page{% endif %}"
+                href="{% url 'gallery' %}"
+                >Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a
                 class="nav-link {% if request.path == post_url %}active"
                 aria-current="page{% endif %}"
                 href="{% url 'post' %}"

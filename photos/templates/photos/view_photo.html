@@ -3,12 +3,12 @@
 {% load static %}
 
 <div class="container">
-    <div class="row jsutify-content-center">
+    <div class="row justify-content-center">
         <div class="col">
             <a href="{% url 'gallery' %}" class="btn btn-primary my-3">Back</a>
-            <div style="height:90vh;">
-                <img style="max-width: 100%; max-height: 100%;" src="https://res.cloudinary.com/db5hwihda/image/upload/v1711193751/bird_1_j1yjpz.jpg" alt="">
-                <p>Two Birds</p>
+            <div>
+                <img style="max-width: 100%; max-height: 100%;" src="{{ photo.image.url }}" alt="various images about bird and books">
+                <p>{{ photo.description }}</p>
             </div>
         </div>
     </div>

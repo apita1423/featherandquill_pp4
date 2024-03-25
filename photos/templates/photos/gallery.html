@@ -12,10 +12,11 @@
                 Category
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">All</li>
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item"><a href="{% url 'gallery' %}">All</a></li>
+                    {% for category in categories %}
+                    <li class="list-group-item">
+                        <a a href="{% url 'gallery' %}?category={{ category.name }}">{{ category.name }}</a></li>
+                    {% endfor %}
                     <a href="{%  url 'add' %}" class="btn btn-outline-primary btn-block btn-sm m-1">Add Photo</a>
                 </ul>
             </div>
@@ -24,46 +25,19 @@
 <!-- Gallery -->
         <div class="col-md-9">
             <div class="row">
+                {% for photo in photos %}
                 <div class="col-md-4">
                     <div class="card my-2">
-                        <img class="card-img-top" class="border" src="https://res.cloudinary.com/db5hwihda/image/upload/v1711193751/bird_1_j1yjpz.jpg" alt="Card image cap">
+                        <img class="card-img-top image fluid" class="border" src="{{ photo.image.url }}" alt="Card image cap">
                         <div class="card-body">
-                            <small>Category: Pets</small>
+                            <small>Category: {{ photo.category.name }}</small>
                         </div>
-                        <a class="btn btn-outline-primary btn-sm m-1" href="{%  url 'photo' 5 %}">View</a>
+                        <a class="btn btn-outline-primary btn-sm m-1" href="{%  url 'photo' photo.id %}">View</a>
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card my-2">
-                        <img class="card-img-top" class="border" src="https://res.cloudinary.com/db5hwihda/image/upload/v1711213032/saiw3ujlqlmtafzzefz6.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <small>Category: Pets</small>
-                        </div>
-                        <a class="btn btn-outline-primary btn-sm m-1" href="{%  url 'photo' 5 %}">View</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card my-2">
-                        <img class="card-img-top" class="border" src="https://res.cloudinary.com/db5hwihda/image/upload/v1711193751/bird_1_j1yjpz.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <small>Category: Pets</small>
-                        </div>
-                        <a class="btn btn-outline-primary btn-sm m-1" href="{%  url 'photo' 5 %}">View</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card my-2">
-                        <img class="card-img-top" class="border" src="https://res.cloudinary.com/db5hwihda/image/upload/v1711193751/bird_1_j1yjpz.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <small>Category: Pets</small>
-                        </div>
-                        <a class="btn btn-outline-primary btn-sm m-1" href="{%  url 'photo' 5 %}">View</a>
-                    </div>
-                </div>
-
+                {% empty %}
+                <h3>No Photos</h3>
+                {% endfor %}
             </div>
         </div>
     </div>
