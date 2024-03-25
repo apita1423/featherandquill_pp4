@@ -104,7 +104,7 @@ Not all user stories have been implemented. They have been left for future imple
 
 - I wanted the colours of the site to be simple, clean, and light. I only used one colour for the buttons and footer.
 
-![Coolors](/static/readme_images/colour.png)
+![Coolors](/static/readme_images/colours.png)
 
 ### Typography
 
@@ -122,7 +122,7 @@ Not all user stories have been implemented. They have been left for future imple
 
 ### Database Relationship Schema
 
-![Database Relationship Schema](/static/readme_images/database_schema.png)
+![Database Relationship Schema](/static/readme_images/database.png)
 
 ---
 
@@ -153,15 +153,14 @@ JS code was tested using [JSHint Validator](https://jshint.com/). Code was used 
 ![JS Validation](/static/readme_images/js_validation.png)
 
 ### PEP8 CI Python
-Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/).
+Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). The only error was in the urlpatterns in urls.py in birdblog. The line exceeded the length, but there wasn't a way to shorten without it giving me another error.
+![CI Python Linter](/static/readme_images/python_validation.png)
 
 | App | Comments | Pass/Fail | 
 | --- | --- | --- |
 | about | all files passed with no errors | PASS |
 | photos | all files passed with no errors | PASS |
 | birdblog | Two path exceeded the line length, but I was unable to fix due to giving another error | PASS |
-
-
 
 ### Manual Testing
 
@@ -225,6 +224,14 @@ Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/).
 ## Credits
 
 ### Code Used
+
+- I relied on CI's I Think Therefore I Blog walkthrough for the bases of the my project.
+
+- Dennis Ivy's Photo Album App with Django & S3 Buckets YouTube tutorial (I did not use S3 Buckets) helped me create the photo app [Dennis Ivy Photo Album App](https://www.youtube.com/watch?v=sSquD2u5Ie0)
+
+- For the 404 page, I looked through this website [404 Page](https://www.makeuseof.com/create-custom-404-error-page-django/).
+
+- I also used Dave Gray's YouTube tutorial to become more familiar with Django. [Dave Gray Django Tutorial](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6NamGNr7dEqzNFEcZ_FAUVX)
 
 ### Content
 
