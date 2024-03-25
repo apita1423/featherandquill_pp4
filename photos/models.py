@@ -16,8 +16,7 @@ class Photo(models.Model):
     """
     Stores a single photo
     """
-    category = models.ForeignKey
-    (Category, on_delete=models.SET_NULL, null=True, blank=True)
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
     image = models.ImageField(null=False, blank=False)
     description = models.TextField(max_length=500, null=False, blank=False)
 
