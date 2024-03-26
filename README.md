@@ -411,6 +411,31 @@ Not all user stories have been implemented. They have been left for future imple
 ### HTML
 HTML code was tested using [W3C HTML Validator](https://validator.w3.org/).
 
+- base.html - Passed, but has 12 info messages.
+![base.html](/static/readme_images/base.html.png)
+
+- about.html - Has the 12 info messages due to the {% extend base.html %}. Error that is using is from the Django admin side where you input the text for the about us page.
+![about.html - error 1](/static/readme_images/aboutus_html_error_1.png)
+![about.html - error 2](/static/readme_images/aboutus_html_error_2.png)
+
+- 404.html - Passed, but has 11 info messages.
+![404.html](/static/readme_images/404.html.png)
+
+- index.html - Passed, but has 23 info messages.
+![index.html](/static/readme_images/index.html.png)
+
+- post_detail.html - 
+
+- gallery.html - Has 16 info messages. One error is adding an extra "a" to my hrefs (I have checked the code from my side and I have only one a for the a tags). A second error is showing a class as a duplication, but this is the code that attaches when a uses click on adding a photo, so in essence there will be multiple class duplication. For the third error, a not allowed as a child element, this code was based of a tutorial for the photo app and the this code is for the Add Button, so it needs to be there.
+![gallery.html error message](/static/readme_images/gallery_error_message.png)
+![gallery.html double error](/static/readme_images/gallery_double_a.png)
+![gallery.html duplicate](/static/readme_images/gallery_duplicate.png)
+![gallery.html duplicate 2](/static/readme_images/gallery_duplicate_2.png)
+
+- add_photo.html - 
+
+- view_photo.html - Passed, but has 12 info messages.
+![viewphoto.html](/static/readme_images/viewphoto.html.png)
 
 ### CSS
 CSS code was tested using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Passed and no errors found.

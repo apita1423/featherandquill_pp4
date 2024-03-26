@@ -6,7 +6,7 @@
     <div class="col-md-4">
       <a href="{% url 'gallery' %}" class="btn btn-primary m-3">Back</a>
       <div class="card">
-        <form method="POST" action="" enctype="multipart/form-data">
+        <form method="POST" action="https://featherandquill-pp4-75f967db4002.herokuapp.com/photos/add/" enctype="multipart/form-data">
           {% csrf_token %}
           <div class="form-group m-3">
             <label>Description *</label>
