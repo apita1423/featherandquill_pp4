@@ -298,91 +298,91 @@ Not all user stories have been implemented. They have been left for future imple
 ### General Features
 
 <details><summary>Favicon Image</summary>
-<img src="">
+<img src="/static/readme_images/favicon.png">
 </details>
 
 <details><summary>Favicon Tab</summary>
-<img src="">
+<img src="/static/readme_images/favicon_tab.png">
 </details>
 
 <details><summary>Title/Navbar</summary>
-<img src="">
+<img src="/static/readme_images/title_navbar.png">
 </details>
 
 <details><summary>Landing/Home Page</summary>
-<img src="">
+<img src="/static/readme_images/landing_home_page.png">
 </details>
 
 <details><summary>About Us</summary>
-<img src="">
+<img src="/static/readme_images/aboutus.png">
 </details>
 
 <details><summary>Sign Up</summary>
-<img src="">
+<img src="/static/readme_images/signup.png">
 </details>
 
 <details><summary>Login</summary>
-<img src="">
+<img src="/static/readme_images/login.png">
 </details>
 
 <details><summary>Login/Sign Up Navbar</summary>
-<img src="">
+<img src="/static/readme_images/login_navbar.png">
 </details>
 
 <details><summary>Gallery Paqe</summary>
-<img src="">
+<img src="/static/readme_images/gallery_page.png">
 </details>
 
 <details><summary>Gallery View</summary>
-<img src="">
+<img src="/static/readme_images/gallery_view.png">
 </details>
 
 <details><summary>Gallery Filter</summary>
-<img src="">
+<img src="/static/readme_images/gallery_filter.png">
 </details>
 
 <details><summary>Gallery Filter - No Photo</summary>
-<img src="">
+<img src="/static/readme_images/gallery_no_filter.png">
 </details>
 
 <details><summary>Gallery Add Photo</summary>
-<img src="">
+<img src="/static/readme_images/gallery_add_photo.png">
 </details>
 
 <details><summary>Blog Post List Page</summary>
-<img src="">
+<img src="/static/readme_images/blog_post_list.png">
 </details>
 
 <details><summary>Blog Post</summary>
-<img src="">
+<img src="/static/readme_images/blogpost.png">
 </details>
 
 <details><summary>Blog Comment</summary>
-<img src="">
+<img src="/static/readme_images/blog_comment.png">
 </details>
 
 <details><summary>Blog Comment CRUD</summary>
-<img src="">
+<img src="/static/readme_images/blog_comment_crud.png">
 </details>
 
 <details><summary>Blog Comment Delete Prompt</summary>
-<img src="">
+<img src="/static/readme_images/blog_comment_delete.png">
 </details>
 
 <details><summary>Blog Post Paginated NEXT</summary>
-<img src="">
+<img src="/static/readme_images/blogpost_paginated_next.png">
 </details>
 
 <details><summary>Blog Post Paginated PREV</summary>
-<img src="">
+<img src="/static/readme_images/blogpost_paginated_prev.png">
 </details>
 
 <details><summary>Logout Prompt</summary>
-<img src="">
+<img src="/static/readme_images/logout_prompt.png">
 </details>
 
 <details><summary>Footer</summary>
-<img src="">
+<img src="/static/readme_images/footer.png">
 </details>
 
 ### Future Implementation
