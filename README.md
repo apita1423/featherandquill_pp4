@@ -88,24 +88,144 @@
 
 Not all user stories have been implemented. They have been left for future implementations.
 
-### First Time Visitor Goals
+- [User Story - Comment anonymously](https://github.com/apita1423/featherandquill_pp4/issues/10)
+- [User Story - Like Blog Posts](https://github.com/apita1423/featherandquill_pp4/issues/9)
+- [Admin Story - Create a schedule of events](https://github.com/apita1423/featherandquill_pp4/issues/5)
+- [Admin Story - Create a booking form for events](https://github.com/apita1423/featherandquill_pp4/issues/4)
 
-- As a **FIRST TIME USER** I can **ONLY SEE THE HOME, ABOUT US, LOGIN, SIGN UP PAGE** so that **LEARN ABOUT THE SITE AND JOIN**.
+### User Visitor Goals
+
 <details>
 <summary>First Time User</summary>
 <ul>
-<li>- AC 1 - GIVEN - User is first time visitor to the site. </li>
-<li> - AC 2 - WHEN - On the home page, only home, about us, login, and sign up is in the nav bar.</li>
-<li> - AC 3 - THEN - User can click on Join Now in the home page or sign up page.</li>
+<li> As a FIRST TIME USER I can ONLY SEE THE HOME, ABOUT US, LOGIN, SIGN UP PAGE so that LEARN ABOUT THE SITE AND JOIN</li>
+<li> AC 1 - GIVEN - User is first time visitor to the site. </li>
+<li> AC 2 - WHEN - On the home page, only home, about us, login, and sign up is in the nav bar.</li>
+<li> AC 3 - THEN - User can click on Join Now in the home page or sign up page.</li>
 </ul>
 </details>
 
+<details>
+<summary>Visitor User</summary>
+<ul>
+<li> As a VISITOR USER I can REGISTER/SIGNUP so that I CAN POST COMMENTS ON BLOG POSTS THAT I'M INTERESTED IN.</li>
+<li> AC 1 - GIVEN I am a visitor user </li>
+<li> AC 2 - AND I click on the sign up button</li>
+<li> AC 3 - AND I add a username and password (email optional)</li>
+<li> AC 4 - WHEN I click on the Sign Up button</li>
+<li> AC 5 - THEN I am redirected to home page showing a list of blog posts</li>
+</ul>
+</details>
 
 ### Registered User Goals
 
+<details>
+<summary>User Story - Login</summary>
+<ul>
+<li> As a REGISTERED USER I can LOGIN INTO MY ACCOUNT so that I CAN COMMENT ON BLOG POSTS ON THE SITE.</li>
+<li> AC 1 - GIVEN I am a registered user</li>
+<li> AC 2 - AND I click on login</li>
+<li> AC 3 - WHEN I enter my username and password</li>
+<li> AC 4 - AND I click on the login button</li>
+<li> AC 5 - THEN It redirects to login home page showing the list of posts</li>
+</ul>
+</details>
+
+<details>
+<summary>User Story - View Blog Posts</summary>
+<ul>
+<li> As a REGISTERED/ADMIN USER I can VIEW THE LIST OF BLOG POSTS so that I CAN VIEW AND CLICK ON POSTS.</li>
+<li> AC 1 - GIVEN I am a registered/admin user.</li>
+<li> AC 2 - WHEN I am on the blog page.</li>
+<li> AC 3 - THEN I can view a list of blog posts.</li>
+</ul>
+</details>
+
+<details>
+<summary>User Story - Comment on posts</summary>
+<ul>
+<li> As a REGISTERED USER I can LEAVE COMMENTS ON BLOG POSTS so that START OR BE PART OF A CONVERSATION.</li>
+<li> AC 1 - GIVEN I am a registered user</li>
+<li> AC 2 - AND I am logged in</li>
+<li> AC 3 - WHEN I am in a blog post</li>
+<li> AC 4 - THEN I can add comment</li>
+</ul>
+</details>
+
+<details>
+<summary>User Story - Update/Delete Comments</summary>
+<ul>
+<li> As a REGISTERED USER I can UPDATE OR DELETE COMMENTS so that I CAN EITHER UPDATE OR DELETE COMMENTS THAT ARE NOT OF INTEREST OR NEED UPDATING.</li>
+<li> AC 1 - GIVEN I'm a registered user</li>
+<li> AC 2 - AND I'm logged in</li>
+<li> AC 3 - THEN I can update or delete my own comments.</li>
+</ul>
+</details>
+
+<details>
+<summary>User Story - View/Add pictures in gallery</summary>
+<ul>
+<li> As a USER/ADMIN I can I CAN VIEW AND ADD PICTURES TO GALLERY so that PHOTOS CAN BE SEEN BY OTHER REGISTERED USERS</li>
+<li> AC 1 - GIVEN I am a registered user</li>
+<li> AC 2 - AND I am logged in</li>
+<li> AC 3 - WHEN I click on Add Photos</li>
+<li> AC 4 - THEN I can add photos, a category, and description</li>
+<li> AC 5 - THEN I can view the photo that has been added</li>
+</ul>
+</details>
+
 ### Admin User Goals
 
+<details>
+<summary>Admin User - Create Blog Posts</summary>
+<ul>
+<li> As a ADMIN I can CREATE, READ, UPDATE, DELETE BLOG POSTS so that THEY CAN BE VIEWED BY REGISTERED AND UNREGISTERED USERS.</li>
+<li> AC 1 - GIVEN I am an admin user</li>
+<li> AC 2 - AND I am logged in</li>
+<li> AC 3 - THEN I can create blog posts</li>
+<li> AC4 - THEN I can read blog posts</li>
+<li> AC 5 - THEN I can update blog posts</li>
+<li> AC6 - THEN I can delete blog posts</li>
+</ul>
+</details>
+
+<details>
+<summary>Admin User - Draft Blog Posts</summary>
+<ul>
+<li> As a ADMIN I can DRAFT BLOG POSTS so that I CAN HAVE CONTENT READY FOR FUTURE POSTS.</li>
+<li> AC 1 - GIVEN I am an admin user</li>
+<li> AC 2 - AND I am logged in</li>
+<li> AC 3 - WHEN I create a blog post</li>
+<li> AC 4- THEN I can save it has a draft to be viewed/edited/post in the future</li>
+</ul>
+</details>
+
+<details>
+<summary>Admin User - Review/A(Dis)pprove/ Comments</summary>
+<ul>
+<li> As a ADMIN I can REVIEW, APPROVE, DISAPPROVE COMMENTS so that THE COMMENTS CAN BE VIEWED BY REGISTERED AND UNREGISTERED USERS.</li>
+<li> AC 1 - GIVEN I am a admin user</li>
+<li> AC 2 - AND I am logged in</li>
+<li> AC 3 - AND I see a list of pending comments</li>
+<li> AC 4 - WHEN I review the pending comments</li>
+<li> AC 5 - THEN I can approve or disapprove the comments</li>
+</ul>
+</details>
+
 ### Agile Development
+- The agile methodology was the main project management tool to use for Feather and Quill. For milestones, I used five epics as way to bundle the user stories: **Comments**, **Blog Posts**, **Gallery**, **Events**, **README**. A Kanban project was also used with four different title: **Todo**, **In Progress**, **Done**, and **Future**. The MoSCoW Method labels for also used: **must have**, **should have**, **could have**, and **wont have**. Other labels were also used: **CRUD** and **documentation**.
+
+#### Kanban
+- Kanban board was split into four sections: Todo, In Progress, Done, and Future. I decided to add a future section to put the User Stories that were labelled could have and wont have, which will be for future implementations.
+![Kanban Board](/static/readme_images/kanban.png)
+
+#### Milesstones
+- I decided to create the EPICs as milestones due to the side of the project and time. There are five epic milestones I used: Comments, Blog Posts, Gallery, Events, and README. All the user stories corresponded with the epic milestones.
+![Milestones](/static/readme_images/milestones.png)
+
+### MoSCoW Method Labels
+- The MoSCow Method labels I used were: must-have, should-have, could-have, and wont-have. I added two extra labels named CRUD and documentation. The CRUD labels was to quickly identify which user stories would have the CRUD functionality and documentation was made for the README.
+![MoSCoW Method Labels](/static/readme_images/labels.png)
 
 ---
 
@@ -164,14 +284,14 @@ JS code was tested using [JSHint Validator](https://jshint.com/). Code was used 
 ![JS Validation](/static/readme_images/js_validation.png)
 
 ### PEP8 CI Python
-Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). The only error was in the urlpatterns in urls.py in birdblog. The line exceeded the length, but there wasn't a way to shorten without it giving me another error.
+Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). The only error was in the urlpatterns in urls.py in birdblog. The line exceeded the length, but there wasn't a way to shorten without it giving me another error. **Update** After running the CI Python Linter and deploying the project there was an error with the syntaxs in th models.py files in birdblog and photos. To fix it I had to bring the code back to the exceeded amount for the error to go away and the project to deploy.
 ![CI Python Linter](/static/readme_images/python_validation.png)
 
 | App | Comments | Pass/Fail | 
 | --- | --- | --- |
 | about | all files passed with no errors | PASS |
-| photos | all files passed with no errors | PASS |
-| birdblog | Two path exceeded the line length, but I was unable to fix due to giving another error | PASS |
+| photos | all files passed with no errors.  | PASS/WARNING |
+| birdblog | Two path exceeded the line length, but I was unable to fix due to giving another error | PASS/WARNING |
 
 ### Manual Testing
 
