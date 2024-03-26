@@ -428,11 +428,10 @@ Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). 
 
 | USER STORY | GHERKIN | PASS/FAIL | 
 | --- | --- | --- |
-| As a FIRST TIME USER I can ONLY SEE THE HOME, ABOUT US, LOGIN, SIGN UP PAGE so that LEARN ABOUT THE SITE AND JOIN | AC 1 - GIVEN - User is first time visitor to the site.
-AC 2 - WHEN - On the home page, only home, about us, login, and sign up is in the nav bar.
-AC 3 - THEN - User can click on Join Now in the home page or sign up page. | PASS |
-| | | |
-| | | |
+| As a FIRST TIME USER I can ONLY SEE THE HOME, ABOUT US, LOGIN, SIGN UP PAGE so that LEARN ABOUT THE SITE AND JOIN |
+| | AC 1 - GIVEN - User is first time visitor to the site.|
+| | AC 2 - WHEN - On the home page, only home, about us, login, and sign up is in the nav bar.|
+| | AC 3 - THEN - User can click on Join Now in the home page or sign up page.| PASS |
 
 ### Bugs
 
