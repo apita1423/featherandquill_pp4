@@ -424,7 +424,9 @@ HTML code was tested using [W3C HTML Validator](https://validator.w3.org/).
 - index.html - Passed, but has 23 info messages.
 ![index.html](/static/readme_images/index.html.png)
 
-- post_detail.html - 
+- post_detail.html - Has 11 info messages. The two errors are both coming from the blog post text that is added from the Django admin side.
+![postdetail.html error message](/static/readme_images/postdetail.html_error.png)
+![postdetail.html error 2](/static/readme_images/postdetail_error2.png)
 
 - gallery.html - Has 16 info messages. One error is adding an extra "a" to my hrefs (I have checked the code from my side and I have only one a for the a tags). A second error is showing a class as a duplication, but this is the code that attaches when a uses click on adding a photo, so in essence there will be multiple class duplication. For the third error, a not allowed as a child element, this code was based of a tutorial for the photo app and the this code is for the Add Button, so it needs to be there.
 ![gallery.html error message](/static/readme_images/gallery_error_message.png)
@@ -432,7 +434,8 @@ HTML code was tested using [W3C HTML Validator](https://validator.w3.org/).
 ![gallery.html duplicate](/static/readme_images/gallery_duplicate.png)
 ![gallery.html duplicate 2](/static/readme_images/gallery_duplicate_2.png)
 
-- add_photo.html - 
+- add_photo.html - Passed, but has 14 info messages.
+![addphoto.html](/static/readme_images/addphoto.html.png)
 
 - view_photo.html - Passed, but has 12 info messages.
 ![viewphoto.html](/static/readme_images/viewphoto.html.png)
@@ -569,7 +572,7 @@ Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). 
 ### Heroku Deployment
 
 1. Go to heroku.com and login with your credentials. 
-2. Sing in with your multifactor pin.
+2. Sign in with your multifactor pin.
 3. Select 'New'.
 4. Create a unique name (it should turn green if the name is available), and select the location.
 5. Once the app is created, click on 'Reveal Config Vars'
