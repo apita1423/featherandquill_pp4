@@ -403,7 +403,7 @@ Not all user stories have been implemented. They have been left for future imple
 ### HTML
 HTML code was tested using [W3C HTML Validator](https://validator.w3.org/).
 
-| HTML | Comments | Pass/Fail | 
+| HTML |  | Pass/Fail | 
 | --- | --- | --- |
 | base.html | |  |
 | gallery.html |  |  |
