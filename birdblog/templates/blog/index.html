@@ -1,4 +1,6 @@
-{% extends "base.html" %} {% load static %} {% block content %} {% if user.is_authenticated %}
+{% extends "base.html" %} {% load static %} {% block content %} 
+
+{% if user.is_authenticated %}
 <!-- Code Credit: CI I Think Therefore I Blog Walkthrough -->
 <!-- Blog Design -->
 <div class="container-fluid">
@@ -12,9 +14,9 @@
             <div class="card-body">
               <div class="image-container">
                 {% if "placeholder" in post.featured_image.url %}
-                <img class="card-img-top" src="{% static 'media/default.jpg' %}" alt="placeholder image" />
+                <img class="card-img-top" src="{% static 'media/default.jpg' %}" alt="placeholder image"/>
                 {% else %}
-                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}" />
+                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.title }}"/>
                 {% endif %}
                 <div class="image-flash">
                   <p class="author">Author: {{ post.author }}</p>
@@ -55,7 +57,7 @@
   <div class="row align-items-center">
     <div class="col-5">
       <div class="d-flex justify-content-center mt-5">
-        <img src="https://res.cloudinary.com/db5hwihda/image/upload/v1711199897/bird_books_n1h2hi.webp" alt="ai picture of a bird and books" class="home-img img-fluid rounded" />
+        <img src="https://res.cloudinary.com/db5hwihda/image/upload/v1711199897/bird_books_n1h2hi.webp" alt="ai picture of a bird and books" class="home-img img-fluid rounded"/>
       </div>
     </div>
     <div class="col-7">
