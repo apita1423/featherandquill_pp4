@@ -45,7 +45,6 @@
   - [Javascript Validation](#javascript-validation)
   - [PEP8 CI Python Validation](#pep8-ci-python-validation)
   - [Manual Testing](#manual-testing)
-  - [Bugs](#bugs)
 
 - [Tools and Technologies Used](#tools-and-technologies-used)
 
@@ -165,7 +164,7 @@ Not all user stories have been implemented. They have been left for future imple
 <details>
 <summary>User Story - View/Add pictures in gallery</summary>
 <ul>
-<li> As a USER/ADMIN I can I CAN VIEW AND ADD PICTURES TO GALLERY so that PHOTOS CAN BE SEEN BY OTHER REGISTERED USERS</li>
+<li> As a REGISTERED USER/ADMIN I can I CAN VIEW AND ADD PICTURES TO GALLERY so that PHOTOS CAN BE SEEN BY OTHER REGISTERED USERS</li>
 <li> AC 1 - GIVEN I am a registered user</li>
 <li> AC 2 - AND I am logged in</li>
 <li> AC 3 - WHEN I click on Add Photos</li>
@@ -213,14 +212,14 @@ Not all user stories have been implemented. They have been left for future imple
 </details>
 
 ### Agile Development
-- The agile methodology was the main project management tool to use for Feather and Quill. For milestones, I used five epics as way to bundle the user stories: **Comments**, **Blog Posts**, **Gallery**, **Events**, **README**. A Kanban project was also used with four different title: **Todo**, **In Progress**, **Done**, and **Future**. The MoSCoW Method labels for also used: **must have**, **should have**, **could have**, and **wont have**. Other labels were also used: **CRUD** and **documentation**.
+- The agile methodology was the main project management tool used for Feather and Quill. For milestones, I used five epics as a way to bundle the user stories: **Comments**, **Blog Posts**, **Gallery**, **Events**, **README**. A Kanban project was also used with four different title: **Todo**, **In Progress**, **Done**, and **Future**. The MoSCoW Method labels were also used: **must have**, **should have**, **could have**, and **wont have**. Two extra labels were added: **CRUD** and **documentation**.
 
 #### Kanban
 - Kanban board was split into four sections: Todo, In Progress, Done, and Future. I decided to add a future section to put the User Stories that were labelled could have and wont have, which will be for future implementations.
 ![Kanban Board](/static/readme_images/kanban.png)
 
 #### Milesstones
-- I decided to create the EPICs as milestones due to the side of the project and time. There are five epic milestones I used: Comments, Blog Posts, Gallery, Events, and README. All the user stories corresponded with the epic milestones.
+- I decided to create the EPICs as milestones due to the size of the project and time. There are five epic milestones I used: Comments, Blog Posts, Gallery, Events, and README. All the user stories corresponded with the different epic milestones.
 ![Milestones](/static/readme_images/milestones.png)
 
 ### MoSCoW Method Labels
@@ -233,7 +232,7 @@ Not all user stories have been implemented. They have been left for future imple
 
 ### Colour Scheme
 
-- I wanted the colours of the site to be simple, clean, and light. I only used one colour for the buttons and footer.
+- I wanted the colours of the site to be simple, clean, and light. I only used one colour for the buttons and footer. The pink when hovering over the NEXT and PREV buttons came from the bootwatch theme.
 
 ![Coolors](/static/readme_images/colours.png)
 
@@ -390,11 +389,20 @@ Not all user stories have been implemented. They have been left for future imple
 
 ### Future Implementation
 
-1. An events/booking page where visitors to the page can view the events, but would not be able to book unless they are authenticated. Authenticated users can view the events and book for the event.
+1. An events/booking page where visitors can view events, but would not be able to book unless they are authenticated. Authenticated users can view the events and book for the event.
 2. Authicated users would be able to comment anonoymously to blog posts.
 3. A newsletter that can be set to authenticated user about events happening in the month, which helps if they are not on the site often.
 
 ### Accessibility
+
+- Lighthouse Desktop Version
+![Lighthouse Desktop](/static/readme_images/lighthouse_desktop.png)
+
+- Lighthouse Mobile Version
+![Lighthouse Mobile](/static/readme_images/lighthouse_mobile.png)
+
+- WAVE - Web Accessibility Evaluation Tool
+![WAVE Evaluation Tool](/static/readme_images/wave.png)
 
 ---
 
@@ -414,9 +422,9 @@ JS code was tested using [JSHint Validator](https://jshint.com/). Code was used 
 
 ### PEP8 CI Python
 Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). The only error was in the urlpatterns in urls.py in birdblog. The line exceeded the length, but there wasn't a way to shorten without it giving me another error.
-
-**Update** After running the CI Python Linter and deploying the project there was an error with the syntax in th models.py files in birdblog and photos. To fix it I had to bring the code back to the exceeded amount for the error to go away and the project to deploy.
 ![CI Python Linter](/static/readme_images/python_validation.png)
+
+**Update** After running the CI Python Linter and deploying the project there was an error with the syntax in the models.py files in birdblog and photos. To fix it I had to bring the code back to the exceeded amount for the error to go away and the project to deploy.
 
 | App | Comments | Pass/Fail | 
 | --- | --- | --- |
@@ -428,11 +436,63 @@ Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). 
 
 | USER STORY | GHERKIN | PASS/FAIL | 
 | --- | --- | --- |
-| As a FIRST TIME USER I can ONLY SEE THE HOME, ABOUT US, LOGIN, SIGN UP PAGE so that LEARN ABOUT THE SITE AND JOIN | AC 1 - GIVEN - User is first time visitor to the site.| PASS |
-| | AC 2 - WHEN - On the home page, only home, about us, login, and sign up is in the nav bar.| PASS |
-| | AC 3 - THEN - User can click on Join Now in the home page or sign up page.| PASS |
+| As a VISITOR USER I can REGISTER/SIGNUP so that I CAN POST COMMENTS ON BLOG POSTS THAT I'M INTERESTED IN. | GIVEN - User is first time visitor to the site | PASS |
+| | WHEN - On the home page, only home, about us, login, and sign up is in the nav bar | PASS |
+| | THEN - User can click on Join Now in the home page or sign up page | PASS |
+| --- | --- | --- |
+| As a FIRST TIME USER I can ONLY SEE THE HOME, ABOUT US, LOGIN, SIGN UP PAGE so that LEARN ABOUT THE SITE AND JOIN | GIVEN I am a visitor user| PASS |
+| | AND I click on the sign up button| PASS |
+| | AND I add a username and password (email optional) | PASS |
+| | WHEN I click on the Sign Up button| PASS |
+| | THEN I am redirected to home page showing a list of blog posts| PASS |
+| --- | --- | --- |
+| As a REGISTERED USER I can LOGIN INTO MY ACCOUNT so that I CAN COMMENT ON BLOG POSTS ON THE SITE. | GIVEN I am a registered user | PASS |
+| | AND I click on login | PASS |
+| | WHEN I enter my username and password | PASS |
+| | AND I click on the login button | PASS |
+| | THEN It redirects to login home page showing the list of posts | PASS |
+| --- | --- | --- |
+| As a REGISTERED/ADMIN USER I can VIEW THE LIST OF BLOG POSTS so that I CAN VIEW AND CLICK ON POSTS. | | PASS |
+| | GIVEN I am a registered/admin user | PASS |
+| | WHEN I am on the blog page | PASS |
+| | THEN I can view a list of blog posts | PASS |
+| --- | --- | --- |
+| As a REGISTERED USER I can LEAVE COMMENTS ON BLOG POSTS so that START OR BE PART OF A CONVERSATION. | GIVEN I am a registered user | PASS |
+| | AND I am logged in | PASS |
+| | WHEN I am in a blog post | PASS |
+| | THEN I can add comment | PASS |
+| --- | --- | --- |
+| As a REGISTERED USER I can UPDATE OR DELETE COMMENTS so that I CAN EITHER UPDATE OR DELETE COMMENTS THAT ARE NOT OF INTEREST OR NEED UPDATING. | GIVEN I'm a registered user | PASS |
+| | AND I'm logged in | PASS |
+| | THEN I can update or delete my own comments. | PASS |
+| --- | --- | --- |
+| As a REGISTEREDUSER/ADMIN I can I CAN VIEW AND ADD PICTURES TO GALLERY so that PHOTOS CAN BE SEEN BY OTHER REGISTERED USERS | GIVEN I am a registered user | PASS |
+| | AND I am logged in | PASS |
+| | WHEN I click on Add Photos | PASS |
+| | THEN I can add photos, a category, and description | PASS |
+| | THEN I can view the photo that has been added | PASS |
+| --- | --- | --- |
+| As a ADMIN I can CREATE, READ, UPDATE, DELETE BLOG POSTS so that THEY CAN BE VIEWED BY REGISTERED AND UNREGISTERED USERS. | GIVEN I am an admin user | PASS |
+| | AND I am logged in | PASS |
+| | THEN I can create blog posts | PASS |
+| | THEN I can read blog posts | PASS |
+| | THEN I can update blog posts | PASS |
+| | THEN I can delete blog posts | PASS |
+| --- | --- | --- |
+| As a ADMIN I can DRAFT BLOG POSTS so that I CAN HAVE CONTENT READY FOR FUTURE POSTS. | GIVEN I am an admin user | PASS |
+| | AND I am logged in | PASS |
+| | WHEN I create a blog post | PASS |
+| | THEN I can save it has a draft to be viewed/edited/post in the future | PASS |
+| --- | --- | --- |
+| As a ADMIN I can REVIEW, APPROVE, DISAPPROVE COMMENTS so that THE COMMENTS CAN BE VIEWED BY REGISTERED AND UNREGISTERED USERS. | GIVEN I am a admin user | PASS |
+| | AND I am logged in | PASS |
+| | AND I see a list of pending comments | PASS |
+| | WHEN I review the pending comments | PASS |
+| | THEN I can approve or disapprove the comments| PASS |
 
-### Bugs
+### Extra Testing 
+
+- When in the blog post or gallery section (including add photo) as a registered user, when the user logs out the url of the blog post or gallery section is not accessible or visible. This passed manual testing.
 
 ---
 
