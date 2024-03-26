@@ -381,7 +381,7 @@ Not all user stories have been implemented. They have been left for future imple
 </details>
 
 <details><summary>Error 404 Page</summary>
-<img src="/static/readme_images/">
+<img src="/static/readme_images/error404_page.png">
 </details>
 
 <details><summary>Footer</summary>
@@ -403,16 +403,6 @@ Not all user stories have been implemented. They have been left for future imple
 ### HTML
 HTML code was tested using [W3C HTML Validator](https://validator.w3.org/).
 
-| HTML |  | Pass/Fail | 
-| --- | --- | --- |
-| base.html | |  |
-| gallery.html |  |  |
-| add_photo.html | | |
-| view_photo.html | | |
-| 404.html | | |
-| index.html | | |
-| post_detail.html | | |
-| about.html | | |
 
 ### CSS
 CSS code was tested using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Passed and no errors found.
@@ -432,9 +422,17 @@ Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). 
 | --- | --- | --- |
 | about | all files passed with no errors | PASS |
 | photos | files passed with no error exception the models.py where it was giving an syntax error | PASS/WARNING |
-| birdblog | Two path exceeded the line length, but I was unable to fix due to giving another error | PASS/WARNING |
+| birdblog | Two path exceeded the line length, but I was unable to fix due to giving another error. Also same error has in photos app.| PASS/WARNING |
 
 ### Manual Testing
+
+| USER STORY | GHERKIN | PASS/FAIL | 
+| --- | --- | --- |
+| As a FIRST TIME USER I can ONLY SEE THE HOME, ABOUT US, LOGIN, SIGN UP PAGE so that LEARN ABOUT THE SITE AND JOIN | AC 1 - GIVEN - User is first time visitor to the site.
+AC 2 - WHEN - On the home page, only home, about us, login, and sign up is in the nav bar.
+AC 3 - THEN - User can click on Join Now in the home page or sign up page. | PASS |
+| | | |
+| | | |
 
 ### Bugs
 
@@ -487,9 +485,35 @@ Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). 
 
 ### Heroku Deployment
 
+1. Go to heroku.com and login with your credentials. 
+2. Sing in with your multifactor pin.
+3. Select 'New'.
+4. Create a unique name (it should turn green if the name is available), and select the location.
+5. Once the app is created, click on 'Reveal Config Vars'
+    - DATABSE_URL
+    - SECRET_KEY
+    - PORT = 8000
+    - DISABLE_COLLECTSTATIC = 1 (DISABLE FOR PRODUCTION)
+    - CLOUDINARY_URL
+6. Under the 'Deploy' button, connect to your GitHub repository.
+7. Once connected pick the repository that you will want to connect to.
+8. Under 'Manual Deploy', click on Deploy Branch.
+9. Once manual deployment is successful click on 'View' or scroll up and click on 'Open app'.
+
 ### Clone Repository
 
+1. In the GitHub repository, click 'Code' and with HTTPS underline copy the link.
+2. Open git bash and change the working directory to the intented location.
+3. Type git clone and paste the link.
+4. Press enter to start the creation of a local clone repository.
+
 ### Fork Repository
+
+1. In the Github repository, click 'Fork' and then 'Create a Fork'.
+2. Change the name and description of the fork.
+3. Select to copy only the main branch or all braches.
+4. Click 'Create a Fork'. 
+5. A newly created repository will appear in you Github repository.
 
 ---
 
