@@ -90,6 +90,17 @@ Not all user stories have been implemented. They have been left for future imple
 
 ### First Time Visitor Goals
 
+- As a **FIRST TIME USER** I can **ONLY SEE THE HOME, ABOUT US, LOGIN, SIGN UP PAGE** so that **LEARN ABOUT THE SITE AND JOIN**.
+<details>
+<summary>First Time User</summary>
+<ul>
+<li>- AC 1 - GIVEN - User is first time visitor to the site. </li>
+<li> - AC 2 - WHEN - On the home page, only home, about us, login, and sign up is in the nav bar.</li>
+<li> - AC 3 - THEN - User can click on Join Now in the home page or sign up page.</li>
+</ul>
+</details>
+
+
 ### Registered User Goals
 
 ### Admin User Goals
