@@ -288,7 +288,6 @@ Not all user stories have been implemented. They have been left for future imple
 </details>
 
 ### Database Relationship Schema
-
 ![Database Relationship Schema](/static/readme_images/database.png)
 
 ---
@@ -381,6 +380,10 @@ Not all user stories have been implemented. They have been left for future imple
 <img src="/static/readme_images/logout_prompt.png">
 </details>
 
+<details><summary>Error 404 Page</summary>
+<img src="/static/readme_images/">
+</details>
+
 <details><summary>Footer</summary>
 <img src="/static/readme_images/footer.png">
 </details>
@@ -398,6 +401,18 @@ Not all user stories have been implemented. They have been left for future imple
 ## Testing
 
 ### HTML
+HTML code was tested using [W3C HTML Validator](https://validator.w3.org/).
+
+| HTML | Comments | Pass/Fail | 
+| --- | --- | --- |
+| base.html | |  |
+| gallery.html |  |  |
+| add_photo.html | | |
+| view_photo.html | | |
+| 404.html | | |
+| index.html | | |
+| post_detail.html | | |
+| about.html | | |
 
 ### CSS
 CSS code was tested using [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Passed and no errors found.
