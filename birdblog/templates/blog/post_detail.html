@@ -5,9 +5,8 @@
   <div class="container">
     <div class="row g-0">
       <div class="col-md-6 masthead-text bg-primary">
-        <!-- Post title goes in these h1 tags -->
+        <!-- Post title  -->
         <h1 class="post-title">{{ post.title }}</h1>
-        <!-- Post author goes before the | the post's created date goes after -->
         <p class="post-subtitle text-dark">{{ post.author }} | {{ post.created_on }}</p>
       </div>
       <div class="d-none d-md-block col-md-6 img-fluid">
@@ -56,8 +55,8 @@
           <p class="approval">This comment is awaiting approval</p>
           {% endif %}
           {% if user.is_authenticated and comment.author == user %}
-          <button class="btn btn-delete" comment_id="{{ comment.id }}">Delete</button>
-          <button class="btn btn-edit" comment_id="{{ comment.id }}">Edit</button>
+          <button class="btn btn-delete" data-comment_id="{{ comment.id }}">Delete</button>
+          <button class="btn btn-edit" data-comment_id="{{ comment.id }}">Edit</button>
           {% endif %}
         </div>
         {% endfor %}
