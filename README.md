@@ -251,6 +251,42 @@ Not all user stories have been implemented. They have been left for future imple
 
 - I used Balsamiq for the wireframes for this project. At the time of creating them, I had grandieous ideas, but due to my leave of absence and limited time to create all the ideas I wanted, not everything was implemented. I tried to get as close to the original idea, but it will be a great tool to have for future updates.
 
+<details><summary>Home/Landing Page</summary>
+<img src="/static/wireframes_images/home_wf.png">
+</details>
+
+<details><summary>About Us Page</summary>
+<img src="/static/wireframes_images/about_us_wf.png">
+</details>
+
+<details><summary>Blog Page</summary>
+<img src="/static/wireframes_images/blog_wf.png">
+</details>
+
+<details><summary>Blog Post/Comments</summary>
+<img src="/static/wireframes_images/blogpost_wf.png">
+</details>
+
+<details><summary>Gallery</summary>
+<img src="/static/wireframes_images/gallery_wf.png">
+</details>
+
+<details><summary>Gallery Add Image</summary>
+<img src="/static/wireframes_images/gallery_form_wf.png">
+</details>
+
+<details><summary>Gallery View Image</summary>
+<img src="/static/wireframes_images/gallery_view_wf.png">
+</details>
+
+<details><summary>Login Page</summary>
+<img src="/static/wireframes_images/login_wf.png">
+</details>
+
+<details><summary>Sign Up Page</summary>
+<img src="/static/wireframes_images/signup_wf.png">
+</details>
+
 ### Database Relationship Schema
 
 ![Database Relationship Schema](/static/readme_images/database.png)
@@ -260,6 +296,94 @@ Not all user stories have been implemented. They have been left for future imple
 ## Features
 
 ### General Features
+
+<details><summary>Favicon Image</summary>
+<img src="">
+</details>
+
+<details><summary>Favicon Tab</summary>
+<img src="">
+</details>
+
+<details><summary>Title/Navbar</summary>
+<img src="">
+</details>
+
+<details><summary>Landing/Home Page</summary>
+<img src="">
+</details>
+
+<details><summary>About Us</summary>
+<img src="">
+</details>
+
+<details><summary>Sign Up</summary>
+<img src="">
+</details>
+
+<details><summary>Login</summary>
+<img src="">
+</details>
+
+<details><summary>Login/Sign Up Navbar</summary>
+<img src="">
+</details>
+
+<details><summary>Gallery Paqe</summary>
+<img src="">
+</details>
+
+<details><summary>Gallery View</summary>
+<img src="">
+</details>
+
+<details><summary>Gallery Filter</summary>
+<img src="">
+</details>
+
+<details><summary>Gallery Filter - No Photo</summary>
+<img src="">
+</details>
+
+<details><summary>Gallery Add Photo</summary>
+<img src="">
+</details>
+
+<details><summary>Blog Post List Page</summary>
+<img src="">
+</details>
+
+<details><summary>Blog Post</summary>
+<img src="">
+</details>
+
+<details><summary>Blog Comment</summary>
+<img src="">
+</details>
+
+<details><summary>Blog Comment CRUD</summary>
+<img src="">
+</details>
+
+<details><summary>Blog Comment Delete Prompt</summary>
+<img src="">
+</details>
+
+<details><summary>Blog Post Paginated NEXT</summary>
+<img src="">
+</details>
+
+<details><summary>Blog Post Paginated PREV</summary>
+<img src="">
+</details>
+
+<details><summary>Logout Prompt</summary>
+<img src="">
+</details>
+
+<details><summary>Footer</summary>
+<img src="">
+</details>
 
 ### Future Implementation
 
@@ -284,13 +408,15 @@ JS code was tested using [JSHint Validator](https://jshint.com/). Code was used 
 ![JS Validation](/static/readme_images/js_validation.png)
 
 ### PEP8 CI Python
-Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). The only error was in the urlpatterns in urls.py in birdblog. The line exceeded the length, but there wasn't a way to shorten without it giving me another error. **Update** After running the CI Python Linter and deploying the project there was an error with the syntaxs in th models.py files in birdblog and photos. To fix it I had to bring the code back to the exceeded amount for the error to go away and the project to deploy.
+Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). The only error was in the urlpatterns in urls.py in birdblog. The line exceeded the length, but there wasn't a way to shorten without it giving me another error.
+
+**Update** After running the CI Python Linter and deploying the project there was an error with the syntax in th models.py files in birdblog and photos. To fix it I had to bring the code back to the exceeded amount for the error to go away and the project to deploy.
 ![CI Python Linter](/static/readme_images/python_validation.png)
 
 | App | Comments | Pass/Fail | 
 | --- | --- | --- |
 | about | all files passed with no errors | PASS |
-| photos | all files passed with no errors.  | PASS/WARNING |
+| photos | files passed with no error exception the models.py where it was giving an syntax error | PASS/WARNING |
 | birdblog | Two path exceeded the line length, but I was unable to fix due to giving another error | PASS/WARNING |
 
 ### Manual Testing
@@ -356,7 +482,7 @@ Python code was tested using [CI Python Linter](https://pep8ci.herokuapp.com/). 
 
 ### Code Used
 
-- I relied on CI's I Think Therefore I Blog walkthrough for the bases of the my project.
+- I relied on CI's I Think Therefore I Blog walkthrough for the bases of the project.
 
 - Dennis Ivy's Photo Album App with Django & S3 Buckets YouTube tutorial (I did not use S3 Buckets) helped me create the photo app [Dennis Ivy Photo Album App](https://www.youtube.com/watch?v=sSquD2u5Ie0)
 
@@ -384,14 +510,17 @@ Images sourced from Pexel:
 - [Bird Image 3](https://www.pexels.com/photo/a-low-angle-shot-of-birds-flying-in-the-sky-between-trees-at-the-forest-14686220/)
 - [Bird Image 4](https://www.pexels.com/photo/selective-focus-photography-of-vintage-brown-and-gray-coffee-grinder-1309778/)
 - [Bird Image 5](https://www.pexels.com/photo/bokeh-lights-67088/)
+- [Bird Image 6](https://www.pexels.com/photo/assorted-books-626986/)
+- [Bird Image 7](https://www.pexels.com/photo/crop-unrecognizable-tourist-taking-photo-with-photo-camera-in-mist-4339449/)
+- [Bird Image 8](https://www.pexels.com/photo/close-up-of-a-seagull-sitting-on-a-wall-near-the-shore-15971438/)
 
 Images sourced from Unsplash:
 
-- [Bird Image 6](https://unsplash.com/photos/black-binoculars-on-opened-book-S8wI7myzAjE)
+- [Bird Image 9](https://unsplash.com/photos/black-binoculars-on-opened-book-S8wI7myzAjE)
 
 Images sourced from Gencraft AI:
 
-- [Bird Image 7](https://gencraft.com/prompt/85c15f30-f465-4a69-8b43-a31d7860d4fa?creation_id=2dc2a55c-1370-4969-93b4-df6f1d420f4c)
+- [Bird Image 10](https://gencraft.com/prompt/85c15f30-f465-4a69-8b43-a31d7860d4fa?creation_id=2dc2a55c-1370-4969-93b4-df6f1d420f4c)
 
 ### Acknowledgments
 
@@ -399,4 +528,4 @@ Images sourced from Gencraft AI:
 
 - Thomas from Tutor Support that helped me with two issues that I thought was a neverending story.
 
-- I'm also greateful for my husband, who has encouraged me to keep on going especially with this project, which has given me multiple issues.
+- I'm also greateful for my husband, who has encouraged me to keep on going especially with this project, which has given me multiple issues. Also, to my two cats and dog that have kept me company through the past weeks.
